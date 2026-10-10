@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101322">
+<title>Roblox Script Hub</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0d17;--panel:#15192a;--panel2:#1b2136;--text:#f4f6ff;--muted:#aab2ce;--accent:#8b7cff;--accent2:#39d9bd;--line:#2b3150}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b2140 0,#0b0d17 55%);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:36px 18px 24px;text-align:center}header .logo{display:inline-grid;place-items:center;width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--accent),var(--accent2));font-size:27px;font-weight:900;color:#101322}
+h1{margin:14px 0 6px;font-size:clamp(28px,5vw,44px);letter-spacing:-1px}header p{margin:0;color:var(--muted)}
+.wrap{width:min(1000px,calc(100% - 28px));margin:auto}
+.search{display:block;width:100%;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:#111528;color:var(--text);font:inherit;margin:10px 0 18px;outline:none}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}.tab{display:block;flex:1;min-width:145px;text-align:center;text-decoration:none;border:1px solid var(--line);border-radius:13px;padding:13px;background:var(--panel);color:var(--text);font-weight:800;cursor:pointer}
+.section-title{margin:28px 0 12px;padding:13px 15px;border-left:5px solid var(--accent);background:#15192a;border-radius:8px;font-size:22px;scroll-margin-top:14px}
+#title-egg{border-left-color:#ff4757}
+.down-arrow{position:fixed;right:18px;bottom:18px;z-index:10;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#f04452;color:white;text-decoration:none;font-size:27px;font-weight:900;box-shadow:0 6px 24px #0008;border:2px solid #ff929a}
+.down-arrow span{position:absolute;right:62px;white-space:nowrap;background:#f04452;color:white;border-radius:8px;padding:7px 10px;font-size:12px;letter-spacing:.04em}
+.note{padding:13px 15px;background:#15192a;border:1px solid var(--line);border-radius:12px;color:var(--muted);font-size:14px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:14px;margin-bottom:36px}
+.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:17px;padding:17px;min-width:0}
+.cardtop{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.badge{font-size:11px;font-weight:900;letter-spacing:.08em;color:#a99fff;background:#302b55;border-radius:7px;padding:5px 8px}
+h2{font-size:19px;margin:11px 0 4px} .desc{color:var(--muted);font-size:14px;margin:0 0 12px}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;max-height:190px;overflow:auto;background:#0a0c15;border:1px solid #272c43;border-radius:10px;padding:12px;color:#dce4ff;font:12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}.btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;border:0;border-radius:10px;padding:10px 13px;font:700 13px system-ui;cursor:pointer}.copy{background:var(--accent);color:white}.source{background:#252b43;color:var(--text);border:1px solid var(--line)}.empty{color:var(--muted);padding:30px;text-align:center;border:1px dashed var(--line);border-radius:14px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:4px 16px 30px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">RH</div>
+  <h1>Roblox Script Hub</h1>
+  <p>Un seul endroit pour retrouver tes scripts, classés par jeu.</p>
+</header>
+<main class="wrap">
+  <input class="search" id="search" type="search" placeholder="Rechercher un script…" aria-label="Rechercher un script">
+  <nav class="tabs" aria-label="Accès rapide aux catégories">
+    <a class="tab" href="#brainrot">STEAL A BRAINROT ↓</a>
+    <a class="tab" href="#aegis">STYLE AEGIS ↓</a>
+    <a class="tab" href="#egg">STEAL EGG ↓</a>
+  </nav>
+  <div class="note">Les fiches ci-dessous sont des entrées de catalogue. Vérifie toujours le code avant de l'exécuter : les scripts tiers peuvent être obsolètes ou dangereux. Ce site n'est pas affilié à Roblox ni aux sites externes.</div>
+  <h2 class="section-title" id="title-brainrot">STEAL A BRAINROT</h2>
+  <section id="brainrot" class="grid" aria-label="Scripts Steal a Brainrot">
+    <article class="card" data-search="steal a brainrot cheater fun source script">
+      <div class="cardtop"><span class="badge">STEAL A BRAINROT</span><span>01</span></div>
+      <h2>Steal a Brainrot — source Cheater.fun</h2>
+      <p class="desc">Ouvre la page source pour consulter le contenu et vérifier ce qu'elle propose.</p>
+      <pre class="copytext">https://cheater.fun/hacks_roblox/11263-steal-a-brainrot-script-1.html</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le lien</button><a class="btn source" href="https://cheater.fun/hacks_roblox/11263-steal-a-brainrot-script-1.html" target="_blank" rel="noopener noreferrer">Ouvrir la source ↗</a></div>
+    </article>
+    <article class="card" data-search="steal a brainrot script 1 loadstring http raw github gumanba">
+      <div class="cardtop"><span class="badge">STEAL A BRAINROT</span><span>02</span></div>
+      <h2>Script 1 — GitHub Lua</h2>
+      <p class="desc">Ligne de chargement publiée par une page de collection de scripts. Code distant non vérifié indépendamment.</p>
+      <pre class="copytext">loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/refs/heads/main/StealaBrainrot", true))()</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le code</button><a class="btn source" href="https://mobilematters.gg/guides/roblox/steal-brainrot-script" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+    </article>
+    <article class="card" data-search="steal a brainrot script 2 loader lua github">
+      <div class="cardtop"><span class="badge">STEAL A BRAINROT</span><span>03</span></div>
+      <h2>Script 2 — Loader Lua</h2>
+      <p class="desc">Autre ligne de chargement listée dans la même collection. Vérifie le contenu distant avant toute utilisation.</p>
+      <pre class="copytext">loadstring(game:HttpGet("https://raw.githubusercontent.com/Estevansit0/KJJK/refs/heads/main/PusarX-loader.lua"))()</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le code</button><a class="btn source" href="https://mobilematters.gg/guides/roblox/steal-brainrot-script" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+    </article>
+    <article class="card" data-search="steal a brainrot script lua github fork brianrot">
+      <div class="cardtop"><span class="badge">STEAL A BRAINROT</span><span>04</span></div>
+      <h2>Script — fichier Steal-A-Brainrot.lua</h2>
+      <p class="desc">Ligne de chargement issue d'une page de scripts tierce. Elle exécute du code hébergé à distance.</p>
+      <pre class="copytext">loadstring(game:HttpGet("https://raw.githubusercontent.com/forkT3/Steal-a-Brianrot/main/Steal-A-Brainrot.lua"))()</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le code</button><a class="btn source" href="https://scriptrb.com/post.php?id=2736" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+    </article>
+  </section>
+  <h2 class="section-title" id="title-egg">STEAL EGG</h2>
+  <section id="egg" class="grid" aria-label="Scripts Steal Egg">
+    <article class="card" data-search="style ax steal an egg cheater fun source scripts">
+      <div class="cardtop"><span class="badge">STYLE AX</span><span>01</span></div>
+      <h2>Steal an Egg — page Cheater.fun</h2>
+      <p class="desc">Page source demandée. Ouvre-la pour voir les scripts, images et éventuels fichiers Lua qui y sont proposés.</p>
+      <pre class="copytext">https://cheater.fun/hacks_roblox/72265-steal-an-egg-script.html</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le lien</button><a class="btn source" href="https://cheater.fun/hacks_roblox/72265-steal-an-egg-script.html" target="_blank" rel="noopener noreferrer">Ouvrir Cheater.fun ↗</a></div>
+    </article>
+    <article class="card" data-search="style ax axurs games hub steal an egg">
+      <div class="cardtop"><span class="badge">STYLE AX</span><span>02</span></div>
+      <h2>Axurs Games Hub</h2>
+      <p class="desc">Catalogue externe : consulte la page pour le script et ses mises à jour. Code tiers non vérifié.</p>
+      <pre class="copytext">https://bo3.gg/fr/games/articles/steal-an-egg-scripts</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le lien</button><a class="btn source" href="https://bo3.gg/fr/games/articles/steal-an-egg-scripts" target="_blank" rel="noopener noreferrer">Voir la liste ↗</a></div>
+    </article>
+    <article class="card" data-search="style ax speed x steal an egg">
+      <div class="cardtop"><span class="badge">STYLE AX</span><span>03</span></div>
+      <h2>Speed X</h2>
+      <p class="desc">Répertorié dans une liste communautaire de scripts pour Steal an Egg. Vérifie le contenu avant utilisation.</p>
+      <pre class="copytext">https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le lien Lua</button><a class="btn source" href="https://bo3.gg/fr/games/articles/steal-an-egg-scripts" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+    </article>
+    <article class="card" data-search="style ax ouroboros hub steal an egg">
+      <div class="cardtop"><span class="badge">STYLE AX</span><span>04</span></div>
+      <h2>Ouroboros Hub</h2>
+      <p class="desc">Lien de chargement mentionné dans une liste communautaire. Il récupère du code distant qui peut changer.</p>
+      <pre class="copytext">https://raw.githubusercontent.com/joustingmatch/Ouroboros/main/loader.lua</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le lien Lua</button><a class="btn source" href="https://bo3.gg/fr/games/articles/steal-an-egg-scripts" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+    </article>
+    <article class="card" data-search="style ax ajjans hub steal an egg">
+      <div class="cardtop"><span class="badge">STYLE AX</span><span>05</span></div>
+      <h2>AJJANS Hub</h2>
+      <p class="desc">La source annonce des fonctions de sélection et d'apparition de pets. Lien de catalogue uniquement.</p>
+      <pre class="copytext">https://api.luarmor.net/files/v4/loaders/359e97f8618e9008afe5f496184ebb7c.lua</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le lien Lua</button><a class="btn source" href="https://bo3.gg/fr/games/articles/steal-an-egg-scripts" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+    </article>
+    <article class="card" data-search="style ax auto steal farm steal an egg">
+      <div class="cardtop"><span class="badge">STYLE AX</span><span>06</span></div>
+      <h2>Auto Steal & Farm</h2>
+      <p class="desc">Lien Lua cité dans un catalogue de scripts. Non testé ; n'exécute pas un fichier distant sans l'inspecter.</p>
+      <pre class="copytext">https://raw.githubusercontent.com/DrakarDev/Hud/refs/heads/main/steal_an_egg.lua</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le lien Lua</button><a class="btn source" href="https://stealaneggroblox.wiki/scripts/" target="_blank" rel="noopener noreferrer">Source ↗</a></div>
+    </article>
+    <article class="card" data-search="style ax catalogue scripts 19 scripts steal an egg">
+      <div class="cardtop"><span class="badge">STYLE AX</span><span>CATALOGUE</span></div>
+      <h2>Autres scripts répertoriés</h2>
+      <p class="desc">Les listes évoluent souvent. Consulte ces catalogues pour les autres entrées, images, fichiers et statuts de mise à jour.</p>
+      <pre class="copytext">https://robloxscripts.com/game/steal-an-egg
+https://rblxscript.org/en/games/steal-an-egg
+https://autofarmscript.com/game/steal-an-egg/</pre>
+      <div class="actions"><button class="btn copy">📋 Copier les liens</button><a class="btn source" href="https://robloxscripts.com/game/steal-an-egg" target="_blank" rel="noopener noreferrer">Ouvrir le catalogue ↗</a></div>
+    </article>
+  </section>
+  <h2 class="section-title" id="title-aegis">STYLE AEGIS</h2>
+  <section id="aegis" class="grid" aria-label="Scripts Style Aegis">
+    <article class="card" data-search="style aegis scripts à ajouter">
+      <div class="cardtop"><span class="badge">STYLE AEGIS</span><span>01</span></div>
+      <h2>Script Aegis</h2>
+      <p class="desc">Emplacement réservé aux scripts Aegis que tu fourniras.</p>
+      <pre class="copytext">-- Colle ici un script Aegis vérifié.</pre>
+      <div class="actions"><button class="btn copy">📋 Copier le texte</button></div>
+    </article>
+  </section>
+  <div id="noResults" class="empty" hidden>Aucun résultat dans cette catégorie.</div>
+</main>
+<footer>Roblox Script Hub · Catalogue non officiel · Les boutons Copier fonctionnent sur les navigateurs compatibles.</footer>
+<a class="down-arrow" href="#egg" aria-label="Descendre à la section STEAL EGG" title="STEAL EGG"><span>STEAL EGG</span>↓</a>
+<script>
+const search=document.getElementById('search');
+search.addEventListener('input',()=>{
+  const q=search.value.trim().toLowerCase();
+  let visible=0;
+  document.querySelectorAll('main .card').forEach(card=>{
+    const match=!q || (card.innerText+' '+(card.dataset.search||'')).toLowerCase().includes(q);
+    card.hidden=!match;
+    if(match) visible++;
+  });
+  document.getElementById('noResults').hidden=visible!==0;
+});
+document.querySelectorAll('.copy').forEach(btn=>btn.dataset.original=btn.textContent);
+document.querySelectorAll('.copy').forEach(btn=>btn.addEventListener('click',async()=>{
+  const text=btn.closest('.card').querySelector('.copytext').innerText;
+  try{await navigator.clipboard.writeText(text)}
+  catch(e){const ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}
+  btn.textContent='✓ Copié !';
+  setTimeout(()=>btn.textContent=btn.dataset.original,1600);
+}));
+</script>
+</body>
+</html>
